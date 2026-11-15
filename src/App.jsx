@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import Audience from "./components/Audience";
 import Documentation from "./components/Documentation";
+import Features from "./components/Features";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Benefits />
         <Audience />
         <Documentation />
+        <Features />
       </main>
     </>
   );
