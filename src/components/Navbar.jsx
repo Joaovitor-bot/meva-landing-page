@@ -13,7 +13,7 @@ export default function Navbar() {
         <a href="#about">About</a>
       </nav>
 
-      <a href="#explore" className="navbar-cta">
+      <a href="https://gabrielr040304-afk.github.io/Hackathon-NASA-2026/" className="navbar-cta">
         Explore Mars <span aria-hidden="true"></span>
       </a>
     </header>
