@@ -28,7 +28,7 @@ export default function AboutFooter() {
           </p>
 
           <a href="#documentation" className="about-link">
-            Explore our documentation ↗
+            Explore our documentation 
           </a>
         </div>
       </section>

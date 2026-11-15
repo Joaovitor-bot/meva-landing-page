@@ -56,7 +56,6 @@ function Hero() {
 
       <div className="hero-bottom">
         <span>01 / MISSION INTRODUCTION</span>
-        <span>SCROLL TO EXPLORE ↓</span>
       </div>
     </section>
   );
