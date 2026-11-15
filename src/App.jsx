@@ -5,6 +5,7 @@ import Benefits from "./components/Benefits";
 import Audience from "./components/Audience";
 import Documentation from "./components/Documentation";
 import Features from "./components/Features";
+import Technology from "./components/Technology";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Audience />
         <Documentation />
         <Features />
+        <Technology />
       </main>
     </>
   );
