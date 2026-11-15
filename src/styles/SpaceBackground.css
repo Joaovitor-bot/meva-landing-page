@@ -96,3 +96,41 @@
     will-change: auto;
   }
 }
+
+
+/* ANIMAÇÃO CONTÍNUA DAS ESTRELAS */
+
+.space-stars-far {
+  animation: starsFar 90s linear infinite;
+}
+
+.space-stars-near {
+  animation: starsNear 45s linear infinite;
+}
+
+@keyframes starsFar {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 370px 390px;
+  }
+}
+
+@keyframes starsNear {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -570px 530px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .space-stars-far,
+  .space-stars-near {
+    animation: none;
+  }
+}
+
+
