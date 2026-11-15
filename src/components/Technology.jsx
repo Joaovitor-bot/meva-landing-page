@@ -8,29 +8,52 @@ const PROJECT_URL =
 const REPOSITORY_URL =
   "https://github.com/gabrielr040304-afk/Hackton-NASA-2026";
 
+
 const technologies = [
   {
     number: "01",
-    name: "JavaScript",
+    name: "JavaScript + TypeScript",
     category: "CORE DEVELOPMENT",
     description:
-      "Powers mission calculations, resource management and safety analysis.",
+      "Mission logic, EVA estimates, interaction and shared simulation modules.",
   },
   {
     number: "02",
-    name: "Leaflet",
-    category: "INTERACTIVE MAPPING",
+    name: "Leaflet 1.9.4",
+    category: "INTERACTIVE CARTOGRAPHY",
     description:
-      "Displays interactive Martian maps, exploration routes and scientific layers.",
+      "Layered Mars maps, rover traverses and scientific locations.",
   },
   {
     number: "03",
-    name: "Three.js",
-    category: "3D VISUALIZATION",
+    name: "Three.js 0.187.0",
+    category: "3D EXPLORATION",
     description:
-      "Supports the development of the immersive Jezero Crater exploration simulator.",
+      "WebGL terrain exploration in Jezero and Gale craters.",
+  },
+  {
+    number: "04",
+    name: "Python + Pillow",
+    category: "DATA PROCESSING",
+    description:
+      "Preparation of orbital terrain models and textures.",
+  },
+  {
+    number: "05",
+    name: "NASA · USGS · HiRISE",
+    category: "SCIENTIFIC SOURCES",
+    description:
+      "Orbital imagery, elevation models and rover observations.",
+  },
+  {
+    number: "06",
+    name: "Node.js + node:test",
+    category: "SOFTWARE VERIFICATION",
+    description:
+      "46 automated tests passed on the examined version.",
   },
 ];
+
 
 export default function Technology() {
   const sectionRef = useRef(null);

@@ -77,12 +77,6 @@ function Benefits() {
               <span>EXPLORE.</span>
             </h2>
           </div>
-
-          <p>
-            Mars is more than a destination.
-            It's a world of challenges, decisions
-            and discoveries waiting to be explored.
-          </p>
         </div>
 
         <div className="benefits-grid">
