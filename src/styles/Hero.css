@@ -68,13 +68,15 @@
 }
 
 
+
 .hero-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: clamp(60px, 7vw, 112px);
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(42px, 4.6vw, 76px);
   font-weight: 700;
-  line-height: 0.95;
-  letter-spacing: -1px;
+  line-height: 1.12;
+  letter-spacing: -0.055em;
 }
+
 
 
 .hero-title span {
