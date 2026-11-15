@@ -10,7 +10,6 @@ export default function Navbar() {
       <nav className="navbar-links" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#mission">Our Mission</a>
-        <a href="#features">Features</a>
         <a href="#about">About</a>
       </nav>
 

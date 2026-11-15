@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import Audience from "./components/Audience";
 import Documentation from "./components/Documentation";
-import Features from "./components/Features";
 import Technology from "./components/Technology";
 import FAQ from "./components/FAQ";
 import SpaceBackground from "./components/SpaceBackground";
@@ -22,7 +21,6 @@ function App() {
           <Benefits />
           <Audience />
           <Documentation />
-          <Features />
           <Technology />
           <FAQ />
         </main>
