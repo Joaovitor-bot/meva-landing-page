@@ -96,7 +96,7 @@ export default function Documentation() {
           </p>
 
           <a
-            href="https://github.com/gabrielr040304-afk/Hackton-NASA-2026"
+            href="https://gabrielr040304-afk.github.io/Hackathon-NASA-2026/"
             target="_blank"
             rel="noopener noreferrer"
           >
