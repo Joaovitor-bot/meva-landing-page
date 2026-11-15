@@ -1,7 +1,9 @@
 
+
 .documentation-section {
+  position: relative;
   padding: 120px 7%;
-  background: #0d1018;
+  background: transparent;
 }
 
 .documentation-container {

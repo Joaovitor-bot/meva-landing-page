@@ -33,8 +33,8 @@ function Hero() {
               <span></span>
             </a>
 
-            <a href="#features" className="hero-secondary">
-              Explore Features <span>→</span>
+            <a href="https://www.youtube.com/watch?v=aRVnDe6OOA0" className="hero-secondary">
+              DEMO VIDEO <span>→</span>
             </a>
           </div>
         </div>

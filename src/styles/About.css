@@ -1,67 +1,407 @@
 
+/* =========================================
+   M.E.V.A — SIMULATION GUIDE
+   ========================================= */
+
 .about-section {
+  position: relative;
+  width: 100%;
   padding: 110px 7%;
   background: transparent;
 }
 
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
 .about-container {
+  width: 100%;
   max-width: 1450px;
   margin: 0 auto;
+
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 0.85fr)
+    minmax(0, 1.65fr);
+
+  align-items: start;
+  gap: clamp(30px, 4.5vw, 70px);
+}
+
+/* =========================================
+   LEFT COLUMN — INTRODUCTION
+   ========================================= */
+
+.about-intro {
+  min-width: 0;
+  padding-top: 8px;
 }
 
 .about-label {
-  color: #e56b45;
-  font-size: 11px;
+  display: block;
+  margin-bottom: 48px;
+
+  color: #a6a9b5;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.2em;
 }
 
-.about-container h2 {
-  margin: 25px 0;
-  font-size: clamp(38px, 5vw, 70px);
+.about-kicker {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 20px;
+
+  color: #e56b45;
+  font-size: 12px;
   font-weight: 700;
-  line-height: 1.15;
+  letter-spacing: 0.07em;
+}
+
+.about-kicker-line {
+  display: block;
+  width: 32px;
+  height: 3px;
+
+  border-radius: 99px;
+  background: #e56b45;
+}
+
+/* TITLE */
+
+.about-intro h2 {
+  margin: 0;
+
+  color: #f5f5f7;
+
+  font-size: clamp(35px, 3.7vw, 61px);
+  font-weight: 800;
+  line-height: 1.1;
   letter-spacing: -0.055em;
 }
 
-.about-container p {
-  max-width: 650px;
-  margin-bottom: 18px;
+/* ORANGE ACCENT */
+
+.about-accent-line {
+  display: block;
+  width: 100px;
+  height: 5px;
+
+  margin-top: 26px;
+
+  border-radius: 99px;
+  background: #e56b45;
+}
+
+/* DESCRIPTION */
+
+.about-intro p {
+  max-width: 330px;
+  margin-top: 28px;
+
   color: #a6a9b5;
-  font-size: 15px;
-  line-height: 1.8;
-}
 
-.about-link {
-  display: inline-block;
-  margin-top: 20px;
-  color: #e56b45;
   font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
+  line-height: 1.75;
 }
 
-.about-link:hover {
-  text-decoration: underline;
+/* =========================================
+   RIGHT COLUMN — INSTRUCTIONS
+   ========================================= */
+
+.about-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  width: 100%;
+  min-width: 0;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-/* FOOTER */
+/* =========================================
+   INSTRUCTION CARDS — LIQUID GLASS
+   ========================================= */
+
+.about-step {
+  display: grid;
+  grid-template-columns:
+    48px 28px 2px minmax(0, 1fr);
+
+  align-items: center;
+  column-gap: 17px;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 82px;
+
+  padding: 12px 18px;
+
+  border: 1px solid rgba(190, 105, 77, 0.3);
+  border-radius: 16px;
+
+  background: rgba(15, 18, 28, 0.55);
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.13);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* CARD HOVER */
+
+.about-step:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(190, 105, 77, 0.5);
+  background: rgba(20, 23, 34, 0.7);
+}
+
+/* =========================================
+   NUMBER BADGES — SOFT TERRACOTTA
+   ========================================= */
+
+.about-step-number {
+  display: grid;
+  place-items: center;
+
+  width: 48px;
+  height: 50px;
+  margin: 0;
+
+  color: #e4b5a0;
+  background: rgba(118, 56, 39, 0.25);
+
+  border: 1px solid rgba(190, 105, 77, 0.35);
+  border-radius: 10px;
+
+  box-shadow: none;
+
+  font-size: 23px;
+  font-weight: 650;
+  line-height: 1;
+  letter-spacing: -0.04em;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.about-step:hover .about-step-number {
+  background: rgba(118, 56, 39, 0.34);
+  border-color: rgba(190, 105, 77, 0.52);
+}
+
+/* =========================================
+   STEP ICONS
+   ========================================= */
+
+.about-step-icon {
+  display: block;
+
+  width: 28px;
+  height: 28px;
+
+  color: #f1f2f4;
+}
+
+/* =========================================
+   VERTICAL DIVIDER
+   ========================================= */
+
+.about-step-divider {
+  display: block;
+
+  width: 2px;
+  height: 34px;
+
+  border-radius: 2px;
+  background: rgba(229, 107, 69, 0.7);
+}
+
+/* =========================================
+   INSTRUCTION TEXT
+   ========================================= */
+
+.about-step p {
+  min-width: 0;
+  margin: 0;
+
+  color: #f1f2f4;
+
+  font-size: clamp(13px, 1.04vw, 15px);
+  font-weight: 400;
+  line-height: 1.55;
+
+  overflow-wrap: break-word;
+}
+
+/* HIGHLIGHTED WORDS */
+
+.about-step p strong {
+  color: #de9373;
+
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* =========================================
+   RESPONSIVE — TABLET
+   ========================================= */
+
+@media (max-width: 1070px) {
+  .about-section {
+    padding: 90px 6%;
+  }
+
+  .about-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 38px;
+  }
+
+  .about-label {
+    margin-bottom: 24px;
+  }
+
+  .about-intro h2 {
+    font-size: clamp(38px, 5.5vw, 58px);
+  }
+
+  .about-intro p {
+    max-width: 570px;
+  }
+
+  .about-step p {
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE — MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+  .about-section {
+    padding: 75px 6%;
+  }
+
+  .about-container {
+    gap: 30px;
+  }
+
+  .about-kicker {
+    font-size: 11px;
+  }
+
+  .about-intro h2 {
+    font-size: clamp(34px, 8.3vw, 47px);
+  }
+
+  .about-intro p {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .about-accent-line {
+    width: 85px;
+    height: 5px;
+    margin-top: 20px;
+  }
+
+  .about-steps {
+    gap: 10px;
+  }
+
+  .about-step {
+    grid-template-columns:
+      38px 23px 2px minmax(0, 1fr);
+
+    column-gap: 10px;
+
+    min-height: 74px;
+    padding: 12px 10px;
+
+    border-radius: 13px;
+  }
+
+  .about-step-number {
+    width: 38px;
+    height: 42px;
+
+    font-size: 20px;
+    border-radius: 9px;
+  }
+
+  .about-step-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .about-step-divider {
+    height: 32px;
+  }
+
+  .about-step p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+/* =========================================
+   ACCESSIBILITY
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-step,
+  .about-step-number {
+    transition: none;
+  }
+
+  .about-step:hover {
+    transform: none;
+  }
+}
+
+/* =========================================
+   FOOTER — ORIGINAL STYLES
+   ========================================= */
 
 .site-footer {
   padding: 55px 7% 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-top: 1px solid
+    rgba(255, 255, 255, 0.12);
+
   background: rgba(10, 12, 20, 0.45);
+
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
+/* FOOTER CONTAINER */
+
 .footer-container {
   max-width: 1450px;
   margin: 0 auto;
+
   display: flex;
   justify-content: space-between;
   gap: 35px;
 }
+
+/* FOOTER BRAND */
 
 .footer-brand strong {
   font-size: 25px;
@@ -70,9 +410,12 @@
 
 .footer-brand p {
   margin-top: 12px;
+
   color: #a6a9b5;
   font-size: 13px;
 }
+
+/* FOOTER NAVIGATION */
 
 .footer-links {
   display: flex;
@@ -83,31 +426,39 @@
 
 .footer-links a {
   color: #a6a9b5;
+
   font-size: 13px;
   text-decoration: none;
+
+  transition: color 0.25s ease;
 }
 
 .footer-links a:hover {
   color: #e56b45;
 }
 
+/* FOOTER BOTTOM */
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+
   max-width: 1450px;
+
   margin: 55px auto 0;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-top: 1px solid
+    rgba(255, 255, 255, 0.1);
+
   color: #777c8d;
   font-size: 11px;
 }
 
-@media (max-width: 700px) {
-  .about-section {
-    padding: 85px 6%;
-  }
+/* FOOTER MOBILE */
 
+@media (max-width: 700px) {
   .footer-container,
   .footer-bottom {
     flex-direction: column;

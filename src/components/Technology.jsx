@@ -131,58 +131,6 @@ export default function Technology() {
             Explore data sources 
           </a>
         </div>
-
-        <div className="technology-access">
-          <div className="technology-access-content">
-            <span className="technology-label">
-              READY TO EXPLORE?
-            </span>
-
-            <h3>Start your mission.</h3>
-
-            <p>
-              Access the Marswalk Planner,
-              plan an expedition and discover
-              what it takes to explore Mars safely.
-            </p>
-
-            <div className="technology-actions">
-              <a
-                href={PROJECT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="technology-primary"
-              >
-                Launch Marswalk Planner 
-              </a>
-
-              <a
-                href={REPOSITORY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="technology-secondary"
-              >
-                View source code 
-              </a>
-            </div>
-          </div>
-
-          <div className="technology-access-visual" aria-hidden="true">
-            <span className="technology-visual-top">
-              M.E.V.A / MISSION ACCESS
-            </span>
-
-            <div className="technology-visual-center">
-              <span>DESTINATION</span>
-              <strong>MARS</strong>
-              <span>EXPLORATION SYSTEM</span>
-            </div>
-
-            <span className="technology-visual-bottom">
-              2026 / MARSWALK PLANNER
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );

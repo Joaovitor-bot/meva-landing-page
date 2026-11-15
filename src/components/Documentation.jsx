@@ -14,17 +14,18 @@ const documents = [
   },
   {
     number: "02",
-    category: "SCIENTIFIC RESEARCH",
-    title: "Data & Sources",
+    category: "RESEARCH",
+    title: "Scientific Article",
     description:
-      "Discover the NASA and USGS datasets behind the exploration experience.",
+      "Explore the scientific foundations, mathematical models, methodology, and findings behind M.E.V.A.",
     details:
       "Review the sources for terrain, weather, radiation, rover routes and imagery, including how real, derived, simulated and hypothetical data are identified.",
-    url: "https://github.com/gabrielr040304-afk/Hackton-NASA-2026/blob/main/SOURCES.md",
+    url: `${import.meta.env.BASE_URL}documents/MEVA-Scientific-Article.pdf`,
+    downloadFile: "MEVA-Scientific-Article.pdf",
   },
   {
     number: "03",
-    category: "DEVELOPMENT",
+    category: "STACK",
     title: "Technical Architecture",
     description:
       "Learn about the technologies and technical decisions behind the platform.",
@@ -42,6 +43,9 @@ export default function Documentation() {
       aria-labelledby="documentation-title"
     >
       <div className="documentation-container">
+
+        {/* SECTION HEADING */}
+
         <div className="documentation-heading">
           <span className="documentation-eyebrow">
             05 / KNOWLEDGE BASE
@@ -58,9 +62,14 @@ export default function Documentation() {
           </p>
         </div>
 
+        {/* DOCUMENTATION CARDS */}
+
         <div className="documentation-grid">
           {documents.map((doc) => (
-            <article className="document-card" key={doc.number}>
+            <article
+              className="document-card"
+              key={doc.number}
+            >
               <div className="document-top">
                 <span>{doc.number}</span>
                 <span>{doc.category}</span>
@@ -68,26 +77,46 @@ export default function Documentation() {
 
               <div className="document-content">
                 <h3>{doc.title}</h3>
+
                 <p>{doc.description}</p>
 
                 <details className="document-preview">
-                  <summary>Preview document</summary>
+                  <summary>
+                    Preview document
+                  </summary>
+
                   <p>{doc.details}</p>
                 </details>
               </div>
 
+              {/* DOCUMENT LINK OR PDF DOWNLOAD */}
+
               <a
                 href={doc.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                download={doc.downloadFile || undefined}
+                target={
+                  doc.downloadFile
+                    ? undefined
+                    : "_blank"
+                }
+                rel={
+                  doc.downloadFile
+                    ? undefined
+                    : "noopener noreferrer"
+                }
                 className="document-link"
               >
                 Read full document
-                <span aria-hidden="true"></span>
+
+                <span aria-hidden="true">
+                  {doc.downloadFile ? "↓" : "↗"}
+                </span>
               </a>
             </article>
           ))}
         </div>
+
+        {/* DOCUMENTATION FOOTER */}
 
         <div className="documentation-footer">
           <p>
@@ -100,9 +129,10 @@ export default function Documentation() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View project on GitHub 
+            View project on GitHub
           </a>
         </div>
+
       </div>
     </section>
   );
