@@ -566,3 +566,10 @@
     transform: none;
   }
 }
+
+
+/* REDUCE SPACE BEFORE FAQ */
+
+.technology-section {
+  padding-bottom: 35px;
+}
