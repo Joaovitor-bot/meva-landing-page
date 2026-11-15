@@ -1,0 +1,122 @@
+
+import { useEffect, useRef } from "react";
+import "../styles/Benefits.css";
+
+const benefits = [
+  {
+    number: "01",
+    label: "MISSION PLANNING",
+    title: "Plan your Marswalk.",
+    description:
+      "Design exploration routes across Martian terrain and prepare for the challenges of a mission on the Red Planet.",
+    tag: "PLAN",
+  },
+  {
+    number: "02",
+    label: "MISSION ANALYSIS",
+    title: "Every decision matters.",
+    description:
+      "Evaluate environmental conditions, astronaut resources and mission safety before taking the next step.",
+    tag: "ANALYZE",
+  },
+  {
+    number: "03",
+    label: "VIRTUAL EXPLORATION",
+    title: "Step onto Mars.",
+    description:
+      "Discover the Martian landscape through an immersive 3D exploration experience currently in development.",
+    tag: "EXPERIENCE",
+  },
+];
+
+function Benefits() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    if (
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      section.classList.add("benefits-visible");
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          section.classList.add("benefits-visible");
+          observer.unobserve(section);
+        }
+      },
+      { threshold: 0.15 }
+    );
+
+    observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section
+      className="benefits-section"
+      id="mission"
+      ref={sectionRef}
+    >
+      <div className="benefits-container">
+        <div className="benefits-header">
+          <div>
+            <span className="benefits-eyebrow">
+              02 / THE EXPERIENCE
+            </span>
+
+            <h2>
+              WHAT YOU'LL
+              <br />
+              <span>EXPLORE.</span>
+            </h2>
+          </div>
+
+          <p>
+            Mars is more than a destination.
+            It's a world of challenges, decisions
+            and discoveries waiting to be explored.
+          </p>
+        </div>
+
+        <div className="benefits-grid">
+          {benefits.map((benefit) => (
+            <article
+              className="benefit-card"
+              key={benefit.number}
+            >
+              <div className="benefit-card-top">
+                <span>{benefit.number}</span>
+                <span className="benefit-arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
+
+              <div className="benefit-card-content">
+                <span className="benefit-label">
+                  {benefit.label}
+                </span>
+
+                <h3>{benefit.title}</h3>
+                <p>{benefit.description}</p>
+              </div>
+
+              <div className="benefit-card-bottom">
+                <span>{benefit.tag}</span>
+                <span>M.E.V.A / 2026</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Benefits;
