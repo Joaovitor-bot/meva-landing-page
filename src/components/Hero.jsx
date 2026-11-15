@@ -14,25 +14,22 @@ function Hero() {
           </span>
 
           <h1 className="hero-title">
-            EXPLORE
+            PLAN THE
             <br />
-            <span>MARS.</span>
+            <span>MISSION.</span>
             <br />
-            EXPERIENCE
+            EXPLORE THE TERRAIN.
             <br />
-            THE IMPOSSIBLE.
+            DISCOVER MARS.
           </h1>
 
           <p className="hero-description">
-            Welcome to M.E.V.A — Mars Exploration and
-            Virtual Adventure. Discover a new way to
-            explore the Red Planet through technology,
-            interactive missions and immersive experiences.
+            M.E.V.A brings Mars exploration closer to Earth through real planetary data, interactive mission planning, and immersive 3D simulation. Plan educational extravehicular activities, analyze Martian terrain, and explore environments based on NASA, USGS, and HiRISE observations.
           </p>
 
           <div className="hero-actions">
             <a href="https://gabrielr040304-afk.github.io/Hackton-NASA-2026/" className="hero-button">
-              Discover Our Mission
+              Start Planning
               <span></span>
             </a>
 
@@ -44,7 +41,6 @@ function Hero() {
 
         <div className="hero-visual" aria-hidden="true">
           <div className="mars-glow"></div>
-          <div className="mars-orbit"></div>
 
           <div className="mars-planet">
             <div className="mars-surface"></div>

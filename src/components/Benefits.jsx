@@ -8,7 +8,7 @@ const benefits = [
     label: "MISSION PLANNING",
     title: "Plan your Marswalk.",
     description:
-      "Design exploration routes across Martian terrain and prepare for the challenges of a mission on the Red Planet.",
+      "Prepare your Martian EVA through eight planning stages. Choose your destination, scientific objectives, crew, equipment, and mission conditions before beginning your exploration.",
     tag: "PLAN",
   },
   {
@@ -16,7 +16,7 @@ const benefits = [
     label: "MISSION ANALYSIS",
     title: "Every decision matters.",
     description:
-      "Evaluate environmental conditions, astronaut resources and mission safety before taking the next step.",
+      " Compare exploration routes using terrain elevation, slope, daylight, travel time, and estimated resource consumption. Understand mission constraints through transparent computational models.",
     tag: "ANALYZE",
   },
   {
@@ -24,7 +24,7 @@ const benefits = [
     label: "VIRTUAL EXPLORATION",
     title: "Step onto Mars.",
     description:
-      "Discover the Martian landscape through an immersive 3D exploration experience currently in development.",
+      "Explore immersive 3D environments built from real Martian elevation data. Navigate Jezero and Gale, investigate scientific targets, and discover how planetary observations shape exploration.",
     tag: "EXPERIENCE",
   },
 ];
