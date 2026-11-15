@@ -7,6 +7,7 @@ import Documentation from "./components/Documentation";
 import Technology from "./components/Technology";
 import FAQ from "./components/FAQ";
 import SpaceBackground from "./components/SpaceBackground";
+import AboutFooter from "./components/AboutFooter";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <main id="home">
           <Hero />
           <Benefits />
+          <AboutFooter />
           <Audience />
           <Documentation />
           <Technology />
