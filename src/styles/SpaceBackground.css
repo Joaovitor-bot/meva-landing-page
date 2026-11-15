@@ -1,0 +1,98 @@
+
+/* FIXED SPACE BACKGROUND */
+
+.space-background {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  background: #080a12;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* NEBULA LIGHT */
+
+.space-nebula {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse at 85% 25%,
+      rgba(176, 65, 35, 0.12),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 15% 75%,
+      rgba(48, 57, 107, 0.14),
+      transparent 50%
+    );
+}
+
+/* STAR LAYERS */
+
+.space-stars {
+  position: absolute;
+  inset: -360px -5%;
+  background-repeat: repeat;
+  will-change: transform;
+}
+
+/* DISTANT STARS */
+
+.space-stars-far {
+  opacity: 0.42;
+  background-image:
+    radial-gradient(circle 1px at 10% 15%, white 95%, transparent),
+    radial-gradient(circle 1px at 65% 70%, white 95%, transparent),
+    radial-gradient(circle 1px at 85% 30%, white 95%, transparent),
+    radial-gradient(circle 1px at 40% 90%, white 95%, transparent),
+    radial-gradient(circle 1px at 25% 55%, white 95%, transparent);
+
+  background-size: 370px 390px;
+}
+
+/* NEAR STARS */
+
+.space-stars-near {
+  opacity: 0.65;
+  background-image:
+    radial-gradient(circle 1.5px at 20% 25%, white 95%, transparent),
+    radial-gradient(circle 1px at 75% 15%, #f1b397 95%, transparent),
+    radial-gradient(circle 1.5px at 55% 80%, white 95%, transparent),
+    radial-gradient(circle 1px at 90% 60%, white 95%, transparent);
+
+  background-size: 570px 530px;
+}
+
+/* ALLOW BACKGROUND TO SHOW THROUGH SECTIONS */
+
+.page-content .hero-section,
+.page-content .benefits-section,
+.page-content .audience-section,
+.page-content .documentation-section,
+.page-content .features-section,
+.page-content .technology-section,
+.page-content .faq-section,
+.page-content .about-section,
+.page-content .site-footer {
+  background: transparent;
+}
+
+/* AVOID DUPLICATE HERO STARS */
+
+.hero-stars {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .space-stars {
+    will-change: auto;
+  }
+}

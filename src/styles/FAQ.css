@@ -41,11 +41,18 @@
 /* ACCORDION */
 
 .faq-list {
-  border-top: 1px solid #30343f;
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(17, 21, 30, 0.46);
+  box-shadow: var(--glass-shadow);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .faq-item {
-  border-bottom: 1px solid #30343f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .faq-item summary {
@@ -196,4 +203,8 @@
   .faq-icon {
     transition: none;
   }
+}
+
+.faq-item:last-child {
+  border-bottom: none;
 }

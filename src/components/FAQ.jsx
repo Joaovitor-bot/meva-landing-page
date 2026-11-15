@@ -15,7 +15,7 @@ const questions = [
   {
     question: "Which locations can I explore?",
     answer:
-      "The Marswalk Planner includes Jezero Crater, Gale Crater , each with different scientific objectives and exploration conditions.",
+      "The Marswalk Planner includes Jezero Crater, Gale Crater, each with different scientific objectives and exploration conditions.",
   },
   {
     question: "Is the 3D simulator available?",

@@ -125,9 +125,7 @@ export default function Features() {
               02 — VIRTUAL EXPLORATION
             </span>
 
-            <span className="simulator-status">
-              IN DEVELOPMENT
-            </span>
+            
 
             <h3>Experience the Martian surface.</h3>
 

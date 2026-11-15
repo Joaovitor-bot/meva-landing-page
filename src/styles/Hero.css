@@ -103,19 +103,22 @@
   align-items: center;
   gap: 28px;
   padding: 17px 24px;
-  background: #df6844;
+  background: rgba(229, 107, 69, 0.16);
   color: white;
-  border-radius: 5px;
+  border: 1px solid rgba(229, 107, 69, 0.32);
+  border-radius: 999px;
   text-decoration: none;
   font-size: 13px;
   font-weight: 700;
   transition: 0.3s;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .hero-button:hover {
-  background: #ff8259;
+  background: rgba(229, 107, 69, 0.26);
   transform: translateY(-4px);
-  box-shadow: 0 12px 35px #e56b4544;
+  box-shadow: 0 12px 35px rgba(229, 107, 69, 0.18);
 }
 
 .hero-secondary {
@@ -198,6 +201,13 @@
   flex-direction: column;
   gap: 5px;
   letter-spacing: 3px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(15, 18, 28, 0.4);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--glass-shadow);
 }
 
 .mars-coordinate span,

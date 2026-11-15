@@ -1,11 +1,23 @@
 
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 28px 7%;
-  background: rgba(8, 10, 18, 0.92);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 7%;
+  margin: 14px auto 0;
+  width: min(92%, 1450px);
+
+  background: rgba(10, 12, 20, 0.48);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  box-shadow: var(--glass-shadow);
+
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
 .navbar-logo {
@@ -38,16 +50,19 @@
 
 .navbar-cta {
   color: #fff;
-  background: #b94b30;
+  background: rgba(229, 107, 69, 0.18);
+  border: 1px solid rgba(229, 107, 69, 0.35);
   padding: 12px 22px;
-  border-radius: 6px;
+  border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-cta:hover {
-  background: #e56b45;
+  background: rgba(229, 107, 69, 0.28);
   transform: translateY(-2px);
 }
 
