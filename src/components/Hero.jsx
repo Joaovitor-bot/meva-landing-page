@@ -53,10 +53,6 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="hero-bottom">
-        <span>01 / MISSION INTRODUCTION</span>
-      </div>
     </section>
   );
 }
