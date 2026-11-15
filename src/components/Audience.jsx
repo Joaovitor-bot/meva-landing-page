@@ -56,7 +56,7 @@ function Audience() {
 
         <div className="audience-heading">
           <span className="audience-label">
-            03 / OUR AUDIENCE
+            04 / OUR AUDIENCE
           </span>
 
           <h2 id="audience-title">

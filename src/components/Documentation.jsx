@@ -44,7 +44,7 @@ export default function Documentation() {
       <div className="documentation-container">
         <div className="documentation-heading">
           <span className="documentation-eyebrow">
-            04 / KNOWLEDGE BASE
+            05 / KNOWLEDGE BASE
           </span>
 
           <h2 id="documentation-title">

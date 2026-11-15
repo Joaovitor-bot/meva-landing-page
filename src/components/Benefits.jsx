@@ -68,7 +68,7 @@ function Benefits() {
         <div className="benefits-header">
           <div>
             <span className="benefits-eyebrow">
-              02 / THE EXPERIENCE
+              03 / THE EXPERIENCE
             </span>
 
             <h2>
