@@ -1,0 +1,139 @@
+
+.audience-section {
+  padding: 120px 7%;
+  background: #0b0d14;
+}
+
+.audience-container {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+/* HEADING */
+
+.audience-heading {
+  max-width: 650px;
+  margin-bottom: 65px;
+}
+
+.audience-label {
+  display: block;
+  margin-bottom: 22px;
+  color: #e56b45;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.audience-heading h2 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(36px, 4.5vw, 64px);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.audience-heading p {
+  max-width: 500px;
+  color: #a6a9b5;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* GRID */
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.audience-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 25px;
+  transition: border-color 0.3s ease;
+}
+
+.audience-item:hover {
+  border-color: #e56b45;
+}
+
+.audience-number {
+  display: block;
+  color: #e56b45;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 55px;
+}
+
+.audience-item h3 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 15px;
+}
+
+.audience-item p {
+  max-width: 340px;
+  color: #9ea2af;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* SCROLL ANIMATION */
+
+.audience-heading,
+.audience-item {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease,
+    border-color 0.3s ease;
+}
+
+.audience-visible .audience-heading,
+.audience-visible .audience-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.audience-visible .audience-item:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.audience-visible .audience-item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .audience-section {
+    padding: 85px 6%;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .audience-heading {
+    margin-bottom: 45px;
+  }
+
+  .audience-number {
+    margin-bottom: 25px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audience-heading,
+  .audience-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
