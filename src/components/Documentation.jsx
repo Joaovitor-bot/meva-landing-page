@@ -83,7 +83,7 @@ export default function Documentation() {
                 className="document-link"
               >
                 Read full document
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true"></span>
               </a>
             </article>
           ))}
@@ -100,7 +100,7 @@ export default function Documentation() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View project on GitHub ↗
+            View project on GitHub 
           </a>
         </div>
       </div>

@@ -105,7 +105,7 @@ export default function Technology() {
           </p>
 
           <a href="#documentation">
-            Explore data sources ↗
+            Explore data sources 
           </a>
         </div>
 
@@ -130,7 +130,7 @@ export default function Technology() {
                 rel="noopener noreferrer"
                 className="technology-primary"
               >
-                Launch Marswalk Planner ↗
+                Launch Marswalk Planner 
               </a>
 
               <a
@@ -139,7 +139,7 @@ export default function Technology() {
                 rel="noopener noreferrer"
                 className="technology-secondary"
               >
-                View source code ↗
+                View source code 
               </a>
             </div>
           </div>

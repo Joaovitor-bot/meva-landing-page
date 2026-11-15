@@ -5,21 +5,21 @@ import "../styles/Audience.css";
 const audiences = [
   {
     number: "01",
-    title: "Students",
+    title: "Students & Educators",
     description:
-      "Discover Mars through interactive experiences that make space exploration easier to understand.",
+      "Explore planetary science through interactive simulations, transforming scientific concepts, mission planning, and Martian exploration into practical learning experiences.",
   },
   {
     number: "02",
-    title: "Educators",
+    title: "Space Enthusiasts",
     description:
-      "Bring concepts of space science, mission planning and exploration into the learning experience.",
+      "Experience Mars through realistic 3D environments, investigate scientific discoveries, and understand the environmental and operational challenges of planetary exploration.",
   },
   {
     number: "03",
-    title: "Space enthusiasts",
+    title: " Space Professionals & Astronauts",
     description:
-      "Explore the challenges of the Red Planet and discover what it takes to plan a mission on Mars.",
+      "Analyze Martian terrain, evaluate potential environmental hazards, compare exploration routes, and investigate mission requirements through preliminary simulations designed to support situational awareness and mission preparedness.",
   },
 ];
 

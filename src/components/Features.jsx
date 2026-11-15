@@ -88,7 +88,7 @@ export default function Features() {
               rel="noopener noreferrer"
             >
               Try the Marswalk Planner
-              <span aria-hidden="true">↗</span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
 
@@ -139,7 +139,7 @@ export default function Features() {
             </p>
 
             <a href="#documentation" className="simulator-link">
-              Explore the technical documentation ↗
+              Explore the technical documentation 
             </a>
           </div>
         </article>

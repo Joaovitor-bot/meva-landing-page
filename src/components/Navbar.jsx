@@ -15,7 +15,7 @@ export default function Navbar() {
       </nav>
 
       <a href="#explore" className="navbar-cta">
-        Explore Mars <span aria-hidden="true">↗</span>
+        Explore Mars <span aria-hidden="true"></span>
       </a>
     </header>
   );

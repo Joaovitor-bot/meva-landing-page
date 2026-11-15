@@ -5,7 +5,7 @@ const questions = [
   {
     question: "What is M.E.V.A?",
     answer:
-      "M.E.V.A (Mars Exploration and Virtual Adventure) is an interactive project designed to explore the challenges of planning missions on Mars. It combines a Marswalk Planner with a 3D exploration experience currently in development.",
+      "M.E.V.A (Mars Exploration and Virtual Adventure) is an interactive platform designed to support the planning and simulation of human exploration missions on Mars. It integrates NASA scientific data, mission resource estimation, environmental risk assessment, and route planning with a fully interactive 3D exploration experience, allowing users to evaluate potential hazards and familiarize themselves with Martian terrain before undertaking real expeditions.",
   },
   {
     question: "Does M.E.V.A use real NASA data?",
@@ -15,17 +15,17 @@ const questions = [
   {
     question: "Which locations can I explore?",
     answer:
-      "The Marswalk Planner includes Jezero Crater, Gale Crater and Arcadia Planitia, each with different scientific objectives and exploration conditions.",
+      "The Marswalk Planner includes Jezero Crater, Gale Crater , each with different scientific objectives and exploration conditions.",
   },
   {
     question: "Is the 3D simulator available?",
     answer:
-      "The first-person 3D exploration experience is currently in development. It is designed around terrain data from Jezero Crater and a helmet-style mission interface.",
+      "Yes. After completing mission preparation, users can enter an interactive first-person 3D simulation to explore and familiarize themselves with the selected Martian environment. Exploration routes are generated using NASA topographic data, allowing users to follow planned trajectories, examine terrain characteristics, identify potential hazards, and assess environmental conditions before undertaking real surface exploration.",
   },
   {
     question: "Can M.E.V.A be used for real missions?",
     answer:
-      "No. M.E.V.A is a demonstration and educational project. Its simulated planning models are not validated for operational astronaut safety or engineering decisions.",
+      "M.E.V.A is designed to support preliminary risk assessment and astronaut preparedness by providing an interactive simulation of Martian exploration environments. Its purpose is to help astronauts better understand unfamiliar terrain, anticipate potential hazards, and evaluate mission requirements before surface exploration. Although the platform aims to improve situational awareness and support safer mission planning, its estimates remain experimental and require further scientific validation before operational use.",
   },
   {
     question: "Where can I find the documentation?",
@@ -83,7 +83,7 @@ export default function FAQ() {
           <p>Looking for more technical information?</p>
 
           <a href="#documentation">
-            Explore documentation ↗
+            Explore documentation 
           </a>
         </div>
       </div>

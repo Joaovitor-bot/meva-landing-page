@@ -31,9 +31,9 @@ function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a href="#mission" className="hero-button">
+            <a href="https://gabrielr040304-afk.github.io/Hackton-NASA-2026/" className="hero-button">
               Discover Our Mission
-              <span>↗</span>
+              <span></span>
             </a>
 
             <a href="#features" className="hero-secondary">

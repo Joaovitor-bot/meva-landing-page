@@ -94,7 +94,6 @@ function Benefits() {
               <div className="benefit-card-top">
                 <span>{benefit.number}</span>
                 <span className="benefit-arrow" aria-hidden="true">
-                  ↗
                 </span>
               </div>
 
