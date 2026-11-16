@@ -20,8 +20,7 @@ const documents = [
       "Explore the scientific foundations, mathematical models, methodology, and findings behind M.E.V.A.",
     details:
       "Review the sources for terrain, weather, radiation, rover routes and imagery, including how real, derived, simulated and hypothetical data are identified.",
-    url: `${import.meta.env.BASE_URL}documents/MEVA-Scientific-Article.pdf`,
-    downloadFile: "MEVA-Scientific-Article.pdf",
+    url: `${import.meta.env.BASE_URL}documents/MEVA_Scientific_Article.pdf`,
   },
   {
     number: "03",
@@ -70,15 +69,21 @@ export default function Documentation() {
               className="document-card"
               key={doc.number}
             >
+              {/* CARD HEADER */}
+
               <div className="document-top">
                 <span>{doc.number}</span>
                 <span>{doc.category}</span>
               </div>
 
+              {/* CARD CONTENT */}
+
               <div className="document-content">
                 <h3>{doc.title}</h3>
 
                 <p>{doc.description}</p>
+
+                {/* DOCUMENT PREVIEW */}
 
                 <details className="document-preview">
                   <summary>
@@ -89,28 +94,15 @@ export default function Documentation() {
                 </details>
               </div>
 
-              {/* DOCUMENT LINK OR PDF DOWNLOAD */}
+              {/* DOCUMENT LINK */}
 
               <a
                 href={doc.url}
-                download={doc.downloadFile || undefined}
-                target={
-                  doc.downloadFile
-                    ? undefined
-                    : "_blank"
-                }
-                rel={
-                  doc.downloadFile
-                    ? undefined
-                    : "noopener noreferrer"
-                }
+                target="_blank"
+                rel="noopener noreferrer"
                 className="document-link"
               >
                 Read full document
-
-                <span aria-hidden="true">
-                  {doc.downloadFile ? "↓" : "↗"}
-                </span>
               </a>
             </article>
           ))}
